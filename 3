@@ -1,0 +1,33 @@
+  1
+http://192.168.101.254/api/v1/ticket
+
+  2
+Content-Type: application/json
+
+  3
+{
+    "username": "admin",
+    "password": "admin123"
+}
+
+4
+{
+    "response": {
+        "serviceTicket": "XXXXXXXXXXXXXX"
+    }
+}
+
+5
+http://192.168.101.254/api/v1/network-device
+
+6
+Content-Type: application/json
+X-Auth-Token: <IDE ÍRD A TICKETET>
+
+7
+http://192.168.101.254/api/v1/host
+
+8
+Content-Type: application/json
+X-Auth-Token: <service ticket>
+
